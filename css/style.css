@@ -1,0 +1,151 @@
+:root{
+    --center-color: pink;
+    --ext-color: rgb(137, 20, 137);
+    --box-color: rgb(62, 62, 62);
+    --inputhover: #13A8BD;
+}
+body{
+    background-color: var(--ext-color);
+    margin: 0;
+    /* background-image: linear-gradient(#FFFFFF 0%, #AACFEF 100%); */
+    /* background-image: radial-gradient(circle farthest-corner, var(--center-color) 40%,var(--ext-color)  100%);
+    background-color: var(--ext-color); */
+    background:linear-gradient(var(--ext-color), var(--center-color)) ;
+    background-size: 100vh 100vh;
+}
+
+.box{
+    background-color: var(--box-color);
+    box-shadow: 0px 0px 20px 0px var(--box-color);
+    color: pink;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding: 20px;
+    text-align: center;
+}
+.box h2{
+    font-size: 200%;
+    background: linear-gradient(var(--ext-color), var(--center-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 50px;
+}
+.box img{
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 2000px;
+}
+.box nav ul a{
+    color: pink;
+    text-decoration: none;
+    border: 0;
+    font-size: 120%;
+}
+nav ul a:hover{
+    cursor: pointer;
+}
+nav ul div {
+    border-radius: 10px;
+    display: inline;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: var(--ext-color);
+}
+
+form h3{
+    margin: 0;
+}
+select, input[type=text], input[type=number], textarea{
+    background-color: white;
+    border: 0;
+    box-shadow: 0px 0px 10px 0px white;
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 120%;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+select:hover, input[type=submit]:hover{
+    cursor: pointer;
+}
+
+input[type=text], input[type=number], textarea{
+    transition-duration: 0.5s;
+}
+
+.scarica{
+    background-color: var(--box-color);
+    box-shadow: 0px 0px 20px 0px var(--box-color);
+    text-align: right;
+    margin: auto;
+    padding: 20px;
+    font-size: 120%;
+    height: 110px;
+}
+.errore{
+    background-color: red;
+    box-shadow: 0px 0px 10px 0px red;
+    text-align: center;
+    margin: auto;
+    padding: 20px; 
+    font-size: 120%;
+    color: white;
+}
+.scarica a{
+    color: black;
+    text-decoration: none;
+}
+
+.qr{
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0px;
+    background-color: white;
+    float: left;    
+}
+
+.but{
+    background: var(--ext-color);
+    color: white;
+    width: 200px;
+    margin-top: 10px;
+    font-size: 150%;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.but a{
+    font-size: 90%;
+    color: white;
+}
+.scarica > .but{
+    margin-top: 0;
+}
+
+
+/* da PC */
+@media screen and (min-width: 780px){
+    .box{
+        width: 800px;
+        border-radius: 20px;
+        font-size: 150%;
+    }
+    .errore, .scarica{
+        width: 800px;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 780px){
+    .box{
+        margin: 20px;
+        border-radius: 10px;
+    }
+}
